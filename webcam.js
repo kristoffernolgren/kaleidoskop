@@ -35,7 +35,7 @@ const placeImage = (canvas, dWidth) => {
 const ve = document.createElement('video')
 if (navigator.mediaDevices) {
   text.innerHTML = 'This service require the use of your webcam, so please give it access. No data leaves your computer.'
-  navigator.mediaDevices.getUserMedia({video: {width: {ideal: 1280, facingMode: 'environment'}, height: { ideal: 720 }}}).then((stream) => {
+  navigator.mediaDevices.getUserMedia({video: {width: {ideal: 1280, facingMode: {ideal: 'environment'}}, height: { ideal: 720 }}}).then((stream) => {
     text.innerHTML = ''
 
     ve.src = window.URL.createObjectURL(stream)
