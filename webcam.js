@@ -34,7 +34,7 @@ const placeImage = (canvas, dWidth) => {
 
 const ve = document.createElement('video')
 if (navigator.mediaDevices) {
-  text.innerHTML = 'If you allow access for the webcam you may enjoy something that I created. No data is shared or stored.'
+  text.innerHTML = 'If you allow access for the webcam you can enjoy something that I created. No data is shared or stored.'
   navigator.mediaDevices.getUserMedia({video: {width: {ideal: 1280, facingMode: {ideal: 'environment'}}, height: { ideal: 720 }}}).then((stream) => {
     text.innerHTML = ''
 
@@ -44,6 +44,6 @@ if (navigator.mediaDevices) {
     placeImage(right, -1, 1)
   })
 } else {
-  text.innerHTML = 'This service does not work in your browser, try firefox or Chrome.'
+  text.innerHTML = 'For a bonus, try visiting this page in Firefox or Chrome.'
 }
 // else säg byt browser
