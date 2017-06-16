@@ -1,0 +1,38 @@
+body{
+	background: black;
+	color: white;
+	letter-spacing: 1.2px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+.hello{
+	position: absolute;
+	top: 33.3%;
+	left: 100px;
+	width: 450px;
+	transform: translateY(-50%);
+	font-size: 11px;
+	text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+h1{
+	opacity: .9;
+	font-weight: 900;
+	font-size: 14px;
+
+	margin: 0;
+	text-transform: uppercase;
+}
+a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	opacity: .85
+}
+
+p{
+	opacity: .85
+}
+
+#message{
+}

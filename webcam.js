@@ -34,7 +34,7 @@ const placeImage = (canvas, dWidth) => {
 
 const ve = document.createElement('video')
 if (navigator.mediaDevices) {
-  text.innerHTML = 'This service require the use of your webcam, so please give it access. No data leaves your computer.'
+  text.innerHTML = 'If you allow access for the webcam you may enjoy something that I created. No data is shared or stored.'
   navigator.mediaDevices.getUserMedia({video: {width: {ideal: 1280, facingMode: {ideal: 'environment'}}, height: { ideal: 720 }}}).then((stream) => {
     text.innerHTML = ''
 
